@@ -1,0 +1,45 @@
+body{
+margin: 0 auto;
+padding: 0;
+font-family: "Century Gothic", Arial;
+background: #c6c6c6;
+}
+
+.main{
+background: #d2ebff;
+border-radius: 20px;
+box-shadow: 1px 1px 2px #b3d0f3;
+margin: 0 10%;
+padding: 0;
+}
+
+h1{
+font-size: 2em;
+color: #fff;
+text-shadow: 1px 1px 1px #333;
+border-bottom: 1px solid #c6c6c6;
+text-align: center;
+padding: 2%;
+}
+
+h2{
+color: #fff;
+text-shadow: 1px 1px 1px #333;
+margin: 0 5%;
+padding: .5% 0;
+}
+
+#red{
+color: #df0000;
+text-shadow: 1px 1px 2px #fff;
+}
+
+#blue{
+color: #002dd4;
+text-shadow: 1px 1px 2px #fff;
+}
+
+p{
+margin: 0 5%;
+padding: 1% 0;
+}
