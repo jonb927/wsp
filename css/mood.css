@@ -1,0 +1,79 @@
+/* Colors
+#0325bc
+#acbef2
+#727a8c
+#a7cc96
+#a8bfb7
+
+Zero everything*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li,
+section{
+    margin:0 auto;
+    padding:0;
+}
+
+body{
+max-width: 1400px;
+font: 100%/1.5 "Baskerville", normal;
+}
+
+h1{
+font:  20px Arial Black;
+}
+
+h2{
+font: 40px Baskerville;
+color: #0325bc;
+}
+
+h3{
+font: 30px Baskerville;
+color: #a7cc96;
+}
+
+h4,p{
+font: 20px Corbel;
+}
+
+h5{
+font: 15px Arial;
+}
+
+.pallet{
+max-width:50%;
+float: left;
+margin: 0 auto;
+padding: 0 2%;
+overflow: hidden;
+}
+
+.elements{
+max-width: 50%;
+float: right;
+}
+
+#f1{
+padding: 0 0 5% 0;
+}
+
+.clearfix{
+clear: both;
+}
+
+ul{
+width: 82.85714286%;
+}
+
+li{
+width: 33.33333333%;
+list-style-type: none;
+float: left;
+}
+
+#m1{
+color: #568ebf;
+}
+
+#m2{
+color: #bf5a5a;
+}
