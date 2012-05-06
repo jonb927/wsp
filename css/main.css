@@ -1,0 +1,325 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/* 
+Colors
+#0325bc Dark blue
+#acbef2 light blue
+#727a8c grey
+#c1e2d7 light green
+#a8bfb7 dark green
+*/ 
+
+body{
+font-family: "Baskerville", Baskerville Old Face, Georgia, serif;
+max-width: 1024px;
+height: 100%;
+margin :0 auto;
+background: -moz-linear-gradient(#028894, #c1e2d7) no-repeat;
+}
+
+header{
+background:#aaa;
+overflow: hidden;
+background:url(../images/header_bg.jpg);
+}
+
+#ticker{
+background:rgba(144, 122, 140, 0.5); /*#727a8c;*/
+}
+
+h1{
+font-size: 2.8125em;
+color: #fff;
+text-shadow: 0 1px 2px #333;
+padding: 0.9765625% 9.765625%;/* 10px 100px */
+}
+
+
+
+h5{
+font-size: 1em;
+color: #fff;
+text-shadow: 0 1px 2px #333;
+padding: .2929688%;/* 3px */
+Text-align: center;
+/*firefox*/
+-moz-animation: ticker 4s infinite;
+-moz-animation-delay: 1s;
+/*safari chrome*/
+-webkit-animation: ticker 4s infinite;
+-webkit-animation-delay: 1s;
+}
+
+h6{
+font: 1.125em Corbel, Arial;
+color: #fff;
+text-shadow: 0 1px 2px #333;
+padding: 0 17.089438% .2929688%;/* 100px */
+}
+
+#search{
+float: right;
+padding: 1.953125%.9765625%;/* 10px */
+}
+
+nav{
+background:rgba(193, 226, 215, 0.8); /*#c4ecb2;*/
+overflow: hidden;
+}
+
+ul{
+width:75%;
+margin: 0 auto;
+}
+
+li{
+width: 16.66666667%;
+float: left;
+}
+
+a{
+font: 1.25em Corbel, Arial;
+color: #028894;
+text-shadow: 0 0 2px #eee;
+text-decoration: none;
+text-align: center;
+display: block;
+}
+
+a:hover{
+background: rgba(2, 136,148, 0.8); /*#028894;*/
+color: #c1e2d7;
+}
+ a:active{
+ background: rgba(0, 0, 0, 0.3);
+ }
+.clearfix{
+clear: left;
+}
+/*
+-----------------Main Content---------------*/
+#main{
+padding: 2% 0;
+/*background-image: url(../images/water_texture.jpg);*/
+}
+
+#logo{
+float: left;
+}
+
+h2{
+font-size: 2.1875em;
+text-align: center;
+color: #c1e2d7;
+padding: 0.9765625% 9.765625%;/* 10px 100px */
+text-shadow: 0px 1px 1px #333;
+}
+
+p{
+font-size: 1.875em;
+margin-bottom: 0.9765625%;
+padding: 0 0.9765625%;
+color: #fff;
+text-shadow: 0 1px 2px #000;
+}
+
+#principal{
+clear: left
+}
+
+.principals{
+list-style-type: none;
+width: 50%;
+text-align: center;
+font: 1em Corbel, Arial;
+color: #fff;
+text-shadow: 0 1px 1px #333;
+float: left;
+padding:.9765625% 0 0 0;
+}
+
+#secondary{
+clear: left;
+padding: 1% 0;
+}
+
+h3{
+font-size:2em;
+}
+
+#facts{
+width: 33.333333%;
+height: 310px;
+float: left;
+background: url(../images/paper_texture.jpg);
+text-align: center;
+}
+
+#facts h3{
+background: #a8bfb7;
+box-shadow: 0 1px 2px #333;
+padding: 1% 0;
+} 
+
+table{
+margin: 1.3020833% auto;
+font: 1em Corbel; 
+}
+
+td{
+text-align: left;
+padding: 1% 8%;
+}
+
+#history{
+width: 33.333333%;
+height: 310px;
+float: left;
+background: #acbef2;
+/*padding:.15% 0;*/
+text-align: center;
+}
+
+#history p{
+text-align: left;
+font: .9em Corbel;
+padding: 2%;
+color: #000;
+text-shadow: 0 0 1px #eee;
+}
+
+#directions{
+width: 33.333333%;
+height: 310px;
+background: #a8bfb7;
+float: right;
+text-align: center;
+}
+
+#directions p{
+font:1.2em Corbel;
+padding: 2%;
+text-align: left;
+color: #000;
+text-shadow: 0 0 1px #eee;
+/*padding: 1.5% 0;*/
+}
+
+#directions a:hover{
+background: none;
+color: #c1e2d7;
+}
+
+#directions a:active{
+color: #000;
+ }
+
+footer{
+background: #028894;
+clear: right;
+overflow: hidden;
+}
+
+h4{
+font-size:1em;
+color: #c1e2d7;
+text-align: left;
+float: left;
+}
+
+#footli{
+}
+
+.footlinks{
+text-align: center;
+list-style-type: none;
+margin: 0;
+padding:0;
+float: right;
+}
+
+.footlinks a{
+color: #c1e2d7;
+text-align: center;
+}
+
+/*firefox*/
+@-moz-keyframes ticker
+{
+0% {color: #fff;}
+50% {color: #fffcb5;}
+100% {color: #fff;}
+}
+
+/*safari chrome*/
+@-webkit-keyframes ticker
+{
+0% {color: #fff;}
+50% {color: #fffcb5;}
+100% {color: #fff;}
+}
