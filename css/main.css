@@ -67,11 +67,11 @@ hr {
 
 /* 
 Colors
-#0325bc Dark blue
-#acbef2 light blue
+#3d5ff4 Dark blue
+#028894 light blue
 #727a8c grey
 #c1e2d7 light green
-#a8bfb7 dark green
+#71dbb8 dark green
 */ 
 
 body{
@@ -155,6 +155,7 @@ a:hover{
 background: rgba(2, 136,148, 0.8); /*#028894;*/
 color: #c1e2d7;
 }
+
  a:active{
  background: rgba(0, 0, 0, 0.3);
  }
@@ -169,7 +170,14 @@ padding: 2% 0;
 }
 
 #logo{
+position: relative;
+-moz-animation: logomove 5s;
 float: left;
+
+}
+
+#llogo:hover{
+background: none;
 }
 
 h2{
@@ -205,6 +213,7 @@ padding:.9765625% 0 0 0;
 
 #secondary{
 clear: left;
+/*overflow: hidden;*/
 padding: 1% 0;
 }
 
@@ -214,21 +223,23 @@ font-size:2em;
 
 #facts{
 width: 33.333333%;
-height: 310px;
+height: 390px;
 float: left;
-background: url(../images/paper_texture.jpg);
+background: -moz-linear-gradient(rgba(113, 219, 189, 0.5), rgba(225, 225, 225, 0.5));
 text-align: center;
 }
 
 #facts h3{
-background: #a8bfb7;
+background: #c1e2d7;
 box-shadow: 0 1px 2px #333;
+text-shadow: 0 0 2px #eee;
 padding: 1% 0;
 } 
 
 table{
 margin: 1.3020833% auto;
 font: 1em Corbel; 
+text-shadow: 0 0 1px #eee;
 }
 
 td{
@@ -238,16 +249,23 @@ padding: 1% 8%;
 
 #history{
 width: 33.333333%;
-height: 310px;
+height: 390px;
 float: left;
-background: #acbef2;
+background: -moz-linear-gradient(rgba(193, 226, 215, 0.5), rgba(225, 225, 225, 0.5));
 /*padding:.15% 0;*/
 text-align: center;
 }
 
+#history h3{
+background: #28b3bf;
+box-shadow: 0 1px 2px #333;
+text-shadow: 0 0 2px #eee;
+padding: 1% 0;
+} 
+
 #history p{
 text-align: left;
-font: .9em Corbel;
+font: 1em Corbel;
 padding: 2%;
 color: #000;
 text-shadow: 0 0 1px #eee;
@@ -255,14 +273,21 @@ text-shadow: 0 0 1px #eee;
 
 #directions{
 width: 33.333333%;
-height: 310px;
-background: #a8bfb7;
+height: 390px;
+background: -moz-linear-gradient(rgba(40, 179, 191, 0.5), rgba(225, 225, 225, 0.5));
 float: right;
 text-align: center;
 }
 
+#directions h3{
+background: #71dbb8;
+box-shadow: 0 1px 2px #333;
+text-shadow: 0 0 2px #eee;
+padding: 1% 0;
+} 
+
 #directions p{
-font:1.2em Corbel;
+font:1em Corbel;
 padding: 2%;
 text-align: left;
 color: #000;
@@ -270,9 +295,15 @@ text-shadow: 0 0 1px #eee;
 /*padding: 1.5% 0;*/
 }
 
+#directions a{
+color: #fff;
+text-shadow: 0 0 1px #333;
+}
+
 #directions a:hover{
 background: none;
 color: #c1e2d7;
+text-shadow: 0 0 1px #333;
 }
 
 #directions a:active{
@@ -308,6 +339,12 @@ color: #c1e2d7;
 text-align: center;
 }
 
+.footlinks a:hover{
+background: rgba(193, 226, 215, 0.8);
+color: #028894;
+text-align: center;
+}
+
 /*firefox*/
 @-moz-keyframes ticker
 {
@@ -322,4 +359,10 @@ text-align: center;
 0% {color: #fff;}
 50% {color: #fffcb5;}
 100% {color: #fff;}
+}
+
+@-moz-keyframes logomove
+{
+0% {opacity: 0; left: -200px;}
+100% {opacity: 1; left: 0px;}
 }
