@@ -79,13 +79,14 @@ font-family: "Baskerville", Baskerville Old Face, Georgia, serif;
 max-width: 1024px;
 height: 100%;
 margin :0 auto;
-background: -moz-linear-gradient(#028894, #c1e2d7) no-repeat;
+background: -moz-linear-gradient(#028894, #c1e2d7) repeat;
 }
 
 header{
 background:#aaa;
 overflow: hidden;
 background:url(../images/header_bg.jpg);
+background-size: cover;
 }
 
 #ticker{
@@ -98,8 +99,6 @@ color: #fff;
 text-shadow: 0 1px 2px #333;
 padding: 0.9765625% 9.765625%;/* 10px 100px */
 }
-
-
 
 h5{
 font-size: 1em;
@@ -156,14 +155,17 @@ background: rgba(2, 136,148, 0.8); /*#028894;*/
 color: #c1e2d7;
 }
 
- a:active{
+a:active{
  background: rgba(0, 0, 0, 0.3);
  }
-.clearfix{
+ 
+ .clearfix{
 clear: left;
 }
+
 /*
 -----------------Main Content---------------*/
+
 #main{
 padding: 2% 0;
 /*background-image: url(../images/water_texture.jpg);*/
@@ -221,6 +223,30 @@ h3{
 font-size:2em;
 }
 
+#history{
+width: 33.333333%;
+height: 390px;
+float: left;
+background: -moz-linear-gradient(rgba(193, 226, 215, 0.5), rgba(225, 225, 225, 0.5));
+/*padding:.15% 0;*/
+text-align: center;
+}
+
+#history h3{
+background: #28b3bf;
+box-shadow: 0 1px 2px #333;
+text-shadow: 0 0 2px #eee;
+padding: 1% 0;
+} 
+
+#history p{
+text-align: left;
+font: 1em Corbel;
+padding: 2%;
+color: #000;
+text-shadow: 0 0 1px #eee;
+}
+
 #facts{
 width: 33.333333%;
 height: 390px;
@@ -245,30 +271,6 @@ text-shadow: 0 0 1px #eee;
 td{
 text-align: left;
 padding: 1% 8%;
-}
-
-#history{
-width: 33.333333%;
-height: 390px;
-float: left;
-background: -moz-linear-gradient(rgba(193, 226, 215, 0.5), rgba(225, 225, 225, 0.5));
-/*padding:.15% 0;*/
-text-align: center;
-}
-
-#history h3{
-background: #28b3bf;
-box-shadow: 0 1px 2px #333;
-text-shadow: 0 0 2px #eee;
-padding: 1% 0;
-} 
-
-#history p{
-text-align: left;
-font: 1em Corbel;
-padding: 2%;
-color: #000;
-text-shadow: 0 0 1px #eee;
 }
 
 #directions{
@@ -345,6 +347,115 @@ color: #028894;
 text-align: center;
 }
 
+#contact{
+width: 63.47656%;
+/*background: #000;*/
+margin: 0 auto;
+}
+
+#contact div{
+margin:2% 0;
+}
+
+label{
+font: 1.5em Corbel;
+color: #fff;
+float: left;
+}
+
+#full_name{
+width: 400px;
+height:20px;
+margin: 0 0 0 60px;
+}
+
+#email{
+width: 400px;
+height:20px;
+margin: 0 0 0 64px;
+}
+
+#address{
+width: 400px;
+height:20px;
+margin: 0 0 0 40px;
+}
+
+#city{
+width: 183px;
+height:20px;
+margin: 0 0 0 80px;
+float: left;
+}
+
+#statel{
+margin: 0 0 0 10px;
+}
+
+#state{
+width: 20px;
+height:20px;
+margin: 0 0 0 10px;
+float: left;
+}
+
+#zipl{
+margin: 0 0 0 10px;
+}
+
+#zip{
+width: 58px;
+height:20px;
+margin: 0 0 0 10px;
+}
+
+#phone{
+width: 400px;
+height:20px;
+margin: 0 0 0 56px;
+}
+
+#comments{
+width: 400px;
+margin: 0 0 10px 11px;
+}
+
+button{
+clear: both;
+margin:0 auto;
+width: 80px;
+height: 50px;
+border-radius: 10px;
+background: -moz-linear-gradient(#028894, #c1e2d7 50%,  #028894);
+border: 1px solid #71dbb8;
+box-shadow: 0px 1px 1px #fff,
+0px 2px 1px #fff,
+0px 3px 1px #fff,
+0px 4px 2px 1px #000;
+font: 1.5em Corbel;
+color:#333;
+}
+
+button:hover{
+background: -moz-linear-gradient(#28a9b5, #c1e2d7 50%,  #28a9b5);
+border: 1px solid #71dbb8;
+box-shadow: 0px 1px 1px #fff,
+0px 2px 1px #fff,
+0px 3px 1px #fff,
+0px 4px 2px 1px #000;
+font: 1.5em Corbel;
+color:#333;
+}
+
+button:active{
+background: -moz-linear-gradient(#028894, #c1e2d7 50%,  #028894);
+border: 1px solid #71dbb8;
+box-shadow: 
+0px 1px 1px 1px #000;
+font: 1.5em Corbel;
+color:#333;
+}
+
 /*firefox*/
 @-moz-keyframes ticker
 {
@@ -361,7 +472,15 @@ text-align: center;
 100% {color: #fff;}
 }
 
+/*firefox*/
 @-moz-keyframes logomove
+{
+0% {opacity: 0; left: -200px;}
+100% {opacity: 1; left: 0px;}
+}
+
+/*safari chrome*/
+@-webkit-keyframes logomove
 {
 0% {opacity: 0; left: -200px;}
 100% {opacity: 1; left: 0px;}
