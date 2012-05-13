@@ -76,7 +76,7 @@ Colors
 
 body{
 font-family: "Baskerville", Baskerville Old Face, Georgia, serif;
-max-width: 1024px;
+max-width: 1500px;
 height: 100%;
 margin :0 auto;
 background: -moz-linear-gradient(#028894, #c1e2d7) repeat;
@@ -85,74 +85,158 @@ background: -moz-linear-gradient(#028894, #c1e2d7) repeat;
 header{
 background:#aaa;
 overflow: hidden;
-background:url(../images/header_bg.jpg);
-background-size: cover;
+background:url(../images/hdrbg.jpg);
 }
 
 #ticker{
-background:rgba(144, 122, 140, 0.5); /*#727a8c;*/
+background:-moz-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1)); 
+height: 40px;
+overflow: hidden;
 }
 
+
 h1{
-font-size: 2.8125em;
-color: #fff;
-text-shadow: 0 1px 2px #333;
+font-size: 4em;
+text-align: center;
+color: #679dcb;
+text-shadow: 0 0 1px #333,
+1px -1px 1px #fff,
+1px 1px 1px #fff,
+-1px -1px 1px #fff,
+-1px 1px 1px #fff,
+2px -2px 1px #fff,
+2px 2px 1px #fff,
+-2px -2px 1px #fff,
+-2px 2px 1px #fff,
+3px -3px 1px #fff,
+3px 3px 1px #fff,
+-3px -3px 1px #fff,
+-3px 3px 1px #fff,
+1px 1px 2px #000,
+-5px -3px 5px #000,
+-6px -3px 5px #000;
 padding: 0.9765625% 9.765625%;/* 10px 100px */
 }
 
 h5{
-font-size: 1em;
+width: 50%;
+font: 1.875em Corbel;
 color: #fff;
 text-shadow: 0 1px 2px #333;
-padding: .2929688%;/* 3px */
-Text-align: center;
+padding: 0 0 .2929688% 0;/* 3px */
+display: block;
+position: relative;
+float: left;
 /*firefox*/
--moz-animation: ticker 4s infinite;
+-moz-animation: ticker 15s ease-in-out infinite;
 -moz-animation-delay: 1s;
-/*safari chrome*/
+/*safari chrome
 -webkit-animation: ticker 4s infinite;
--webkit-animation-delay: 1s;
+-webkit-animation-delay: 1s;*/
 }
 
 h6{
-font: 1.125em Corbel, Arial;
+font: 1.5em bolder Corbel, Arial;
+text-align: center;
 color: #fff;
-text-shadow: 0 1px 2px #333;
+text-shadow: -1px 1px 1px #000,
+-2px 1px 1px #000;
 padding: 0 17.089438% .2929688%;/* 100px */
 }
 
 #search{
 float: right;
-padding: 1.953125%.9765625%;/* 10px */
+padding: .444444%; /*5px */
+font: 1.25em Corbel;
+}
+
+#search input{
+color: #aaa;
+height: 25px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border: none;
+background: rgba(0, 0, 0, .3);
+}
+
+#search input:focus{
+background: rgba(0, 0, 0, .6);
+}
+
+#search input[type=submit]{
+color: #000;
+height: 25px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+background: rgba(255, 255, 255, .4);
+position: relative;
+right: 4px;
+}
+
+#search input[type=submit]:hover{
+background: rgba(255, 255, 255, .6);
 }
 
 nav{
-background:rgba(193, 226, 215, 0.8); /*#c4ecb2;*/
+height: 40px;
+background:-moz-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
 overflow: hidden;
 }
 
 ul{
 width:75%;
 margin: 0 auto;
+padding: .3%;
 }
 
 li{
-width: 16.66666667%;
+width: 16.666667%;
 float: left;
 }
 
+#home{
+background:-moz-linear-gradient(rgba(212,119,120,1), rgba(192,89,90,1));
+border-top-left-radius: 10px;
+box-shadow: 1px 0 3px #333;
+}
+
+#parents{
+background:-moz-linear-gradient(rgba(229,189,138,1), rgba(216,171,114,1));
+}
+
+#staff{
+background:-moz-linear-gradient(rgba(117,94,58,1), rgba(100,76,39,1));
+}
+
+#students{
+background:-moz-linear-gradient(rgba(197,216,169,1), rgba(178,201,145,1));
+}
+
+#news{
+background:-moz-linear-gradient(rgba(111,164,211,1), rgba(86,142,191,1));
+}
+
+#policies{
+background:-moz-linear-gradient(rgba(253,247,201,1), rgba(254,244,168,1));
+border-top-right-radius: 10px;
+}
+
 a{
-font: 1.25em Corbel, Arial;
-color: #028894;
-text-shadow: 0 0 2px #eee;
+font: 1.25em bold Corbel, Arial;
+line-height: 40px;
+color: #fff;
+text-shadow: 0px -1px 1px #333,
+-2px -1px 1px #333;
 text-decoration: none;
 text-align: center;
 display: block;
 }
 
 a:hover{
-background: rgba(2, 136,148, 0.8); /*#028894;*/
-color: #c1e2d7;
+background: rgba(0,0,0,.1); /*#028894;*/
+color: #fff;
 }
 
 a:active{
@@ -166,6 +250,11 @@ clear: left;
 /*
 -----------------Main Content---------------*/
 
+#content{
+max-width: 1024px;
+margin: 0 auto;
+}
+
 #main{
 padding: 2% 0;
 /*background-image: url(../images/water_texture.jpg);*/
@@ -175,7 +264,6 @@ padding: 2% 0;
 position: relative;
 -moz-animation: logomove 5s;
 float: left;
-
 }
 
 #llogo:hover{
@@ -325,6 +413,11 @@ text-align: left;
 float: left;
 }
 
+footer{
+background: url(../images/blackboard.jpg);
+height: 320px;
+}
+
 #footli{
 }
 
@@ -459,17 +552,17 @@ color:#333;
 /*firefox*/
 @-moz-keyframes ticker
 {
-0% {color: #fff;}
-50% {color: #fffcb5;}
-100% {color: #fff;}
+0% {opacity: 1; right: -700px;}
+80% {opacity: 1; right: 0px;}
+100% {opacity: 0; right: 0px;}
 }
 
 /*safari chrome*/
 @-webkit-keyframes ticker
 {
-0% {color: #fff;}
-50% {color: #fffcb5;}
-100% {color: #fff;}
+0% {opacity: 1; left: 1000px;}
+80% {opacity: 1; left: 0px;}
+100% {opacity: 0; left: 0px;}
 }
 
 /*firefox*/
