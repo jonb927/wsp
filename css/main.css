@@ -444,14 +444,14 @@ height: 45px;
 
 #newsletter label{
 margin: 0 5%;
-font: 1.5em Chalkduster;
+font: 1.5em Chalkduster, Chalkboard;
 color: #fff;
 }
 
 #newsletter input[type=submit]{
 border:none;
 margin: 0 45%;
-font: 1.5em Chalkduster;
+font: 1.5em Chalkduster, Chalkboard;
 color: #fff;
 width: 25%;
 height: 45px;
@@ -463,7 +463,7 @@ margin: 4%;
 }
 
 #admin p{
-font: 1.125em Chalkduster;
+font: 1.125em Chalkduster, Chalkboard;
 color: #fff;
 text-shadow: none;
 }
@@ -487,7 +487,7 @@ padding:0;
 float: right;
 }
 footer a{
-font: 1.25em Chalkduster;
+font: 1.25em Chalkduster, Chalkboard;
 color: #fff;
 text-align: center;
 }
@@ -746,8 +746,3 @@ background: url(../images/art.jpg);
 100% {opacity: 1; left: 0px;}
 }
 
-@font-face {
-    font-family: Chalkduster;
-    src: url(http://jonb927.github.com/wsp/fonts/Chalkduster.ttf);
-    font-weight:400;
-}
