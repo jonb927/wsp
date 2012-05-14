@@ -749,5 +749,5 @@ background: url(../images/art.jpg);
 @font-face
 {
 font-family: myFirstFont;
-src: url('Chalkduster.ttf');
+src: url("Chalkduster.ttf");
 }
