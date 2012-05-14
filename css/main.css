@@ -197,6 +197,7 @@ width: 16.666667%;
 float: left;
 }
 
+/* color links
 #home{
 background:-moz-linear-gradient(rgba(212,119,120,1), rgba(192,89,90,1));
 border-top-left-radius: 10px;
@@ -223,6 +224,7 @@ background:-moz-linear-gradient(rgba(111,164,211,1), rgba(86,142,191,1));
 background:-moz-linear-gradient(rgba(253,247,201,1), rgba(254,244,168,1));
 border-top-right-radius: 10px;
 }
+*/
 
 a{
 font: 1.25em bold Corbel, Arial;
@@ -655,6 +657,63 @@ box-shadow:
 0px 1px 1px 1px #000;
 font: 1.5em Corbel;
 color:#333;
+}
+
+/*--------------
+Parent Page
+--------------*/
+#parent{
+overflow: hidden;
+margin: 0 auto;
+}
+
+#classroom{
+width: 100%;
+
+}
+
+#classroom a{
+display: block;
+}
+
+#classroom li{
+width: 21.5%;
+margin: 2% 1.5%; 
+height: 150px;
+list-style-type: none;
+
+}
+
+#prek{
+background: url(../images/prek.jpg);
+}
+
+#kindergarden{
+background: url(../images/kindergarden.jpg);
+}
+
+#fst{
+background: url(../images/fstgrade.jpg);
+}
+
+#snd{
+background: url(../images/2ndgrade.jpg);
+}
+
+#trd{
+background: url(../images/3rdgrade.jpg);
+}
+
+#fth{
+background: url(../images/4thgrade.jpg);
+}
+
+#fith{
+background: url(../images/5thgrade.jpg);
+}
+
+#art{
+background: url(../images/art.jpg);
 }
 
 /*firefox*/
