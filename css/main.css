@@ -748,6 +748,6 @@ background: url(../images/art.jpg);
 
 @font-face {
     font-family: Chalkduster;
-    src: url(Chalkduster.ttf);
+    src: url(http://jonb927.github.com/wsp/fonts/Chalkduster.ttf);
     font-weight:400;
 }
