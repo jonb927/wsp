@@ -79,7 +79,7 @@ font-family: "Baskerville", Baskerville Old Face, Georgia, serif;
 max-width: 1500px;
 height: 100%;
 margin :0 auto;
-background: -moz-linear-gradient(#028894, #c1e2d7) repeat;
+background: -moz-radial-gradient(50% 85%, farthest-corner, #d0e6fc, #b1d7f5);
 }
 
 header{
@@ -93,7 +93,6 @@ background:-moz-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
 height: 40px;
 overflow: hidden;
 }
-
 
 h1{
 font-size: 4em;
@@ -146,7 +145,7 @@ padding: 0 17.089438% .2929688%;/* 100px */
 
 #search{
 float: right;
-padding: .444444%; /*5px */
+padding: .333333%; /*5px */
 font: 1.25em Corbel;
 }
 
@@ -157,6 +156,7 @@ border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
 border: none;
 background: rgba(0, 0, 0, .3);
+box-shadow: inset 1px 1px 1px #333;
 }
 
 #search input:focus{
@@ -170,13 +170,14 @@ border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
 border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
-background: rgba(255, 255, 255, .4);
+background: url(../images/mglass.png) center no-repeat, rgba(255, 255, 255, .8);
 position: relative;
 right: 4px;
+top: 1px;
 }
 
 #search input[type=submit]:hover{
-background: rgba(255, 255, 255, .6);
+background: url(../images/mglass.png) center no-repeat, rgba(255, 255, 255, .6);
 }
 
 nav{
@@ -251,55 +252,57 @@ clear: left;
 -----------------Main Content---------------*/
 
 #content{
-max-width: 1024px;
+max-width: 1000px;
 margin: 0 auto;
+}
+
+#generic{
+height: 600px;
 }
 
 #main{
 padding: 2% 0;
-/*background-image: url(../images/water_texture.jpg);*/
+background-image: url(../images/manatees.jpg);
 }
 
 #logo{
+margin: 0 auto;
+padding: 0 2.5%;
 position: relative;
--moz-animation: logomove 5s;
-float: left;
+/*-moz-animation: logomove 5s;*/
 }
 
-#llogo:hover{
-background: none;
+#girl1, #girl3{
+-moz-transform: rotate(5deg);
+}
+
+#girl2, #boy{
+-moz-transform: rotate(-5deg);
 }
 
 h2{
-font-size: 2.1875em;
+font-size: 2.625em;
 text-align: center;
-color: #c1e2d7;
-padding: 0.9765625% 9.765625%;/* 10px 100px */
-text-shadow: 0px 1px 1px #333;
+color: #fff;
+padding: 4% 9.765625%;/* 10px 100px */
+text-shadow: 0px -1px 1px #000,
+-1px -1px 1px #000,
+-2px -1px 1px #000,
+-3px -1px 1px #000;
 }
 
 p{
-font-size: 1.875em;
+font: 1.875em Corbel;
 margin-bottom: 0.9765625%;
 padding: 0 0.9765625%;
 color: #fff;
-text-shadow: 0 1px 2px #000;
+text-shadow: 0px -1px 1px #000,
+-1px -1px 1px #000,
+-2px -1px 1px #000,
+-3px -1px 1px #000;
 }
 
-#principal{
-clear: left
-}
 
-.principals{
-list-style-type: none;
-width: 50%;
-text-align: center;
-font: 1em Corbel, Arial;
-color: #fff;
-text-shadow: 0 1px 1px #333;
-float: left;
-padding:.9765625% 0 0 0;
-}
 
 #secondary{
 clear: left;
@@ -404,41 +407,98 @@ footer{
 background: #028894;
 clear: right;
 overflow: hidden;
+background: url(../images/blackboard.jpg);
+height: 320px;
+font: 1em Chalkduster;
 }
 
 h4{
+clear: right;
 font-size:1em;
-color: #c1e2d7;
+color: #fff;
+margin: 0 4%;
 text-align: left;
 float: left;
 }
 
-footer{
-background: url(../images/blackboard.jpg);
-height: 320px;
+
+#newsletter{
+width: 40%;
+/*background: #000;*/
+margin: 2% auto;
+float: right;
 }
 
-#footli{
+#newsletter div{
+margin:6% 0;
 }
 
-.footlinks{
+#newsletter #namenews,#emailnews{
+background: url(../images/newsletter_box.jpg);
+border:none;
+width: 54%;
+height: 45px;
+}
+
+#newsletter label{
+margin: 0 5%;
+font: 1.5em Chalkduster;
+color: #fff;
+}
+
+#newsletter input[type=submit]{
+border:none;
+margin: 0 45%;
+font: 1.5em Chalkduster;
+color: #fff;
+width: 25%;
+height: 45px;
+background: url(../images/newsletter_send.jpg);
+}
+
+#admin{
+margin: 4%;
+}
+
+#admin p{
+font: 1.125em Chalkduster;
+color: #fff;
+text-shadow: none;
+}
+
+
+footer p{
+font-size: 1.125em;
+margin: 2%;
+}
+
+footer ul{
+width: 90%;
+}
+
+footer li{
+overflow: hidden;
 text-align: center;
 list-style-type: none;
 margin: 0;
 padding:0;
 float: right;
 }
-
-.footlinks a{
-color: #c1e2d7;
+footer a{
+font: 1.25em Chalkduster;
+color: #fff;
 text-align: center;
 }
 
-.footlinks a:hover{
+footer a:hover{
 background: rgba(193, 226, 215, 0.8);
 color: #028894;
 text-align: center;
 }
+
+/* -------
+Contact Page
+----------*/
 
 #contact{
 width: 63.47656%;
@@ -452,7 +512,7 @@ margin:2% 0;
 
 label{
 font: 1.5em Corbel;
-color: #fff;
+color: #4085b5;
 float: left;
 }
 
@@ -460,24 +520,48 @@ float: left;
 width: 400px;
 height:20px;
 margin: 0 0 0 60px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 #email{
 width: 400px;
 height:20px;
 margin: 0 0 0 64px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 #address{
 width: 400px;
 height:20px;
 margin: 0 0 0 40px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 #city{
 width: 183px;
 height:20px;
 margin: 0 0 0 80px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 float: left;
 }
 
@@ -489,6 +573,12 @@ margin: 0 0 0 10px;
 width: 20px;
 height:20px;
 margin: 0 0 0 10px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 float: left;
 }
 
@@ -500,17 +590,35 @@ margin: 0 0 0 10px;
 width: 58px;
 height:20px;
 margin: 0 0 0 10px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 #phone{
 width: 400px;
 height:20px;
 margin: 0 0 0 56px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 #comments{
 width: 400px;
 margin: 0 0 10px 11px;
+border-radius: 5px;
+border-left: 1px solid #3b86b8;
+border-top: 1px solid #3b86b8;
+border-right: 2px solid #8ccaf4;
+border-bottom: 2px solid #8ccaf4;
+box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 button{
