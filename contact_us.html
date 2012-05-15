@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Spring Lake Elementary | Home of the Manatees</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 				
@@ -18,7 +19,6 @@
 			
 			<header>
 			<h1>Spring Lake Elementary School</h1>
-				<h6> 695 Orange Avenue Aleamonte Springs, FL | 407-746-16650</h6>
 			</header>	
 			<nav>
 				<ul>
@@ -49,37 +49,90 @@ or concerns that you have about our school, cirriculum, registration, teachers, 
 				
 				<div>
 				<label for="full_name">Name</label>
-				<input type="text" name="full_name" id="full_name"/>
+				<input type="text" name="full_name" placeholder=" Jon Bennett" id="full_name"/>
 				</div>
 				
 				<div>
 				<label for="email">Email</label>
-				<input type="text" name="email" id="email"/>
+				<input type="text" name="email" placeholder="sample@somemail.com" id="email"/>
 				</div>
 				
 				<div>
 				<label for="address">Address</label>
-				<input type="text" name="address" id="address"/>
+				<input type="text" name="address" placeholder="555 One Way Dr." id="address"/>
 				</div>
 				
 				<div>
 				<label for="city">City</label>
-				<input type="text" name="city" id="city"/>
+				<input type="text" name="city" placeholder="Altamonte" id="city"/>
 				</div>
 				
 				<div>
 				<label for="state" id="statel">State</label>
-				<input type="text" name="state" id="state"/>
+				<select name="state" placeholder="FL" id="state">
+				     <option value=""></option>
+					<option value="AK">AK</option>
+					<option value="AL">AL</option>
+					<option value="AR">AR</option>
+					<option value="AZ">AZ</option>		
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>	
+					<option value="DC">DC</option>
+					<option value="DE">DE</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>	
+					<option value="HI">HI</option>	
+					<option value="IA">IA</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>	
+					<option value="MA">MA</option>
+					<option value="MD">MD</option>
+					<option value="ME">ME</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MO">MO</option>
+					<option value="MS">MS</option>			
+					<option value="MT">MT</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="NE">NE</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NV">NV</option>
+					<option value="NY">NY</option>
+					<option value="OH">OH</option>	
+					<option value="OK">OK</option>	
+					<option value="OR">OR</option>		
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VA">VA</option>
+					<option value="VT">VT</option>
+					<option value="WA">WA</option>
+					<option value="WI">WI</option>
+					<option value="WV">WV</option>
+					<option value="WY">WY</option>
+				</select>
 				</div>
 				
 				<div>
 				<label for="zip" id="zipl">Zip</label>
-				<input type="text" name="zip" id="zip"/>
+				<input type="text" name="zip" placeholder="32701" id="zip"/>
 				</div>
 				
 				<div>
 				<label for="phone">Phone</label>
-				<input type="text" name="phone" id="phone"/>
+				<input type="text" name="phone" placeholder="555-123-4567" id="phone"/>
 				</div>
 				
 				<div>
@@ -107,6 +160,11 @@ or concerns that you have about our school, cirriculum, registration, teachers, 
 					<input type="text" name="emailnews" id="emailnews"/>
 					</div>
 					
+					<div id="terms">
+						<p><input type="checkbox" name="accept" id="accept"/>
+				 I have Read the <a href="">Terms and Services.</a></p>
+				 	</div>
+				 	
 					<div>
 					<input type="submit" value="SEND"/>
 					</div>
@@ -118,6 +176,7 @@ or concerns that you have about our school, cirriculum, registration, teachers, 
 					<p>Mr. Alex Agosto 407-746-1600</p>
 					<p>Assistant Principal</p>
 					<p>Ms. Kimberly Lochrane 407-746-1663</p>
+					<p>695 Orange Avenue Aleamonte Springs, FL | 407-746-1650</p>
 					<p><a href="Contact.pdf">Home Stylesheet</a></p>
 				</div>
 			
