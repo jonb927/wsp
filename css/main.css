@@ -189,7 +189,8 @@ overflow: hidden;
 ul{
 width:75%;
 margin: 0 auto;
-padding: .3%;
+padding: 0;
+overflow: hidden;
 }
 
 li{
@@ -298,12 +299,12 @@ font: 1.875em Corbel;
 margin-bottom: 0.9765625%;
 padding: 0 0.9765625%;
 color: #fff;
-text-shadow: 0px -1px 1px #000,
--1px -1px 1px #000,
--2px -1px 1px #000,
--3px -1px 1px #000;
+text-shadow: 0px -1px 1px #000
+;
 }
 
+#mission{
+background: rgba(0,0,0,0.2)}
 
 
 #secondary{
@@ -411,16 +412,19 @@ clear: right;
 overflow: hidden;
 background: url(../images/blackboard.jpg);
 height: 320px;
-font: 1em Chalkduster;
+font-family: 'Architects Daughter', cursive;
 }
 
 h4{
 clear: right;
 font-size:1em;
 color: #fff;
-margin: 0 4%;
+margin: 0;
 text-align: left;
 float: left;
+position: relative;
+top: 15px;
+margin: 0 5%;
 }
 
 
@@ -429,53 +433,104 @@ width: 40%;
 /*background: #000;*/
 margin: 2% auto;
 float: right;
+font-size: 1.5em;
 }
 
 #newsletter div{
-margin:6% 0;
+margin:2.025% 0;
 }
 
-#newsletter #namenews,#emailnews{
-background: url(../images/newsletter_box.jpg);
-border:none;
+#newsletter #namenews{
+background: rgba(0,0,0,0.1);
+border: 2px solid #fff;
 width: 54%;
 height: 45px;
+font-family: 'Architects Daughter', cursive;
+font-size:1.25em;
+color: #effa3f;
+}
+
+#newsletter #emailnews{
+background: rgba(0,0,0,0.1);
+border: 2px solid #fff;
+position : relative;
+left: 9px;
+width: 54%;
+height: 45px;
+font-family: 'Architects Daughter', cursive;
+font-size:1.25em;
+color: #effa3f;
 }
 
 #newsletter label{
 margin: 0 5%;
-font: 1.5em Chalkduster, Chalkboard;
 color: #fff;
+font-family: 'Architects Daughter', cursive;
 }
 
+#newsletter input[type=checkbox]{
+border: 2px solid #fff;
+background: rgba(0,0,0,0.1);
+}
+
+#terms input{
+border: 2px solid #fff;
+background: rgba(0,0,0,0.1);
+}
+
+#terms p{
+font-size: .8em;
+}
+
+#terms a{
+display: inline;
+font-size: .8em;
+color:#6bb2e2;
+}
+
+#terms a:hover{
+color:#effa3f;
+}
 #newsletter input[type=submit]{
 border:none;
 margin: 0 45%;
-font: 1.5em Chalkduster, Chalkboard;
 color: #fff;
+font-family: 'Architects Daughter', cursive;
 width: 25%;
 height: 45px;
-background: url(../images/newsletter_send.jpg);
+font-size: 1em;
+border-radius: 45% 45%;
+border: 2px solid #fff;
+background: rgba(0,0,0,0.1);
 }
+
+#newsletter input[type=submit]:hover{
+background: rgba(0,0,0,0.8);
+border: 4px solid #fff;
+}
+
 
 #admin{
 margin: 4%;
 }
 
 #admin p{
-font: 1.125em Chalkduster, Chalkboard;
+font-family: 'Architects Daughter', cursive;
+font-size: 1.125em;
 color: #fff;
 text-shadow: none;
 }
 
 
 footer p{
+font-family: 'Architects Daughter', cursive;
 font-size: 1.125em;
-margin: 2%;
+margin: 1%;
 }
 
 footer ul{
-width: 90%;
+margin: 0;
+width: 82%;
 }
 
 footer li{
@@ -486,15 +541,17 @@ margin: 0;
 padding:0;
 float: right;
 }
+
 footer a{
-font: 1.25em Chalkduster,  Chalkboard;
+font-family: 'Architects Daughter', cursive;
+font-size: 1.25em;
 color: #fff;
 text-align: center;
 }
 
 footer a:hover{
-background: rgba(193, 226, 215, 0.8);
-color: #028894;
+background: none;
+color: #6bb2e2;
 text-align: center;
 }
 
@@ -506,6 +563,10 @@ Contact Page
 width: 63.47656%;
 /*background: #000;*/
 margin: 0 auto;
+}
+
+#contact input, select{
+font-size: 1.125em;
 }
 
 #contact div{
@@ -555,7 +616,7 @@ box-shadow: inset 1px 1px 1px #3b86b8;
 }
 
 #city{
-width: 183px;
+width: 163px;
 height:20px;
 margin: 0 0 0 80px;
 border-radius: 5px;
@@ -572,8 +633,8 @@ margin: 0 0 0 10px;
 }
 
 #state{
-width: 20px;
-height:20px;
+width: 50px;
+height:28px;
 margin: 0 0 0 10px;
 border-radius: 5px;
 border-left: 1px solid #3b86b8;
