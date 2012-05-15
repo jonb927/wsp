@@ -79,7 +79,11 @@ font-family: "Baskerville", Baskerville Old Face, Georgia, serif;
 max-width: 1500px;
 height: 100%;
 margin :0 auto;
+background: #d0e6fc;
 background: -moz-radial-gradient(50% 85%, farthest-corner, #d0e6fc, #b1d7f5);
+background: -webkit-radial-gradient(50% 85%, farthest-corner, #d0e6fc, #b1d7f5);
+background: -mms-radial-gradient(50% 85%, farthest-corner, #d0e6fc, #b1d7f5);
+background: -o-radial-gradient(50% 85%, farthest-corner, #d0e6fc, #b1d7f5);
 }
 
 header{
@@ -91,6 +95,9 @@ background:url(../images/hdrbg.jpg);
 
 #ticker{
 background:-moz-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1)); 
+background:-webkit-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
+background:-ms-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
+background:-o-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
 height: 40px;
 overflow: hidden;
 }
@@ -158,6 +165,9 @@ background: url(../images/mglass.png) center no-repeat, rgba(255, 255, 255, .6);
 nav{
 height: 40px;
 background:-moz-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
+background:-webkit-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
+background:-ms-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
+background:-o-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
 overflow: hidden;
 }
 
@@ -446,6 +456,7 @@ background: rgba(0,0,0,0.1);
 
 #terms p{
 font-size: .8em;
+color: #fff;
 }
 
 #terms a{
