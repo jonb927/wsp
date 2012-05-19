@@ -113,14 +113,14 @@ margin:0 auto;
 line-height: 138px;
 text-align: center;
 position: relative;
-color: #fff;
-text-shadow: 0px 0px 1px #265171,
-1px 1px 1px #265171,
- -1px -1px 1px #265171,
- 0px 1px 1px #265171,
- 0px -1px 1px #265171,
- 1px 0px 1px #265171,
- -1px 0px 1px #265171,
+color: #005d9e;
+text-shadow: 0px 0px 1px #fff,
+1px 1px 1px #fff,
+ -1px -1px 1px #fff,
+ 0px 1px 1px #fff,
+ 0px -1px 1px #fff,
+ 1px 0px 1px #fff,
+ -1px 0px 1px #fff,
  3px 1px 2px #000;
 }
 
