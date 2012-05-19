@@ -737,6 +737,7 @@ margin:0 auto;
 width: 25%;
 height: 50px;
 border-radius: 10px;
+background: rgba(28,32,139,1);
 background: -moz-linear-gradient(rgba(28,32,139,1), rgba(72,126,183,1) 30% ,  rgba(28,32,139,1));
 background:-o-linear-gradient(rgba(28,32,139,1), rgba(72,126,183,1) 30% ,  rgba(28,32,139,1));
 background: -ms-linear-gradient(rgba(28,32,139,1), rgba(72,126,183,1) 30% ,  rgba(28,32,139,1));
@@ -749,6 +750,7 @@ color:#fff;
 }
 
 button:hover{
+background: rgba(8,12,119,1)
 background:-moz-linear-gradient(rgba(8,12,119,1), rgba(52,106,163,1) 30% ,  rgba(8,12,119,1));
 background:-ms-linear-gradient(rgba(8,12,119,1), rgba(52,106,163,1) 30% ,  rgba(8,12,119,1));
 background:-o-linear-gradient(rgba(8,12,119,1), rgba(52,106,163,1) 30% ,  rgba(8,12,119,1));
