@@ -96,9 +96,12 @@ margin:0 auto;
 }
 
 #ticker{
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63a0c0', endColorstr='#204f95'); /* IE6 & IE7 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#63a0c0', endColorstr='#204f95')"; /* IE8+ */
+
 background:-moz-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1)); 
 background:-webkit-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
-background:-ms-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
+background:-ms-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));/* IE10*/
 background:-o-linear-gradient(rgba(32,79,149,1), rgba(99,160,192,1));
 height: 40px;
 overflow: hidden;
