@@ -1004,9 +1004,9 @@ background: -webkit-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%
 Tablet Portrait size to standard 1200 (devices and browsers) */
 
 @media screen and (min-width: 959px) and (max-width:1200px){
-	/**/body{
+	/*body{
 	background: #aaa;
-	}		
+	}	*/	
 	
 @-moz-keyframes ticker
 	{
@@ -1020,9 +1020,9 @@ Tablet Portrait size to standard 1200 (devices and browsers) */
 Tablet Portrait size to standard 960 (devices and browsers) */
 
 @media screen and (min-width: 768px) and (max-width:959px){
-	/**/body{
+	/*body{
 	background: #000;
-	}		
+	}	*/	
 	
 	h5{
 	font: 1.5em Corbel;
@@ -1090,9 +1090,9 @@ Tablet Portrait size to standard 960 (devices and browsers) */
 Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
 
 @media only screen and (min-width: 480px) and (max-width:767px){
-	/**/body{
+	/*body{
 	background: #444;
-	}
+	}*/
 	
 	#contactcontent section p{
 	clear: left;
@@ -1281,9 +1281,9 @@ Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
 Mobile Portrait Size to Mobile Landscape Size 497 (devices and browsers) */
 
 @media only screen and (max-width:479px){
-	/**/body{
+	/*body{
 	background: #aaa;
-	}
+	}*/
 	
 	#ticker{
 	height: 80px;
@@ -1492,6 +1492,7 @@ Mobile Portrait Size to Mobile Landscape Size 497 (devices and browsers) */
 	button{
 	width: 35%;
 	}
+	
 	@-moz-keyframes ticker
 	{
 	0% {opacity: 1;}
