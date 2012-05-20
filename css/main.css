@@ -125,20 +125,20 @@ text-shadow: 0px 0px 1px #fff,
 }
 
 h5{
+line-height: 40px;
 width: 50%;
 font: 1.875em Corbel;
 color: #fff;
 text-shadow: 0 1px 2px #333;
-padding: 0 0 .2929688% 0;/* 3px */
 display: block;
 position: relative;
 float: left;
 /*firefox*/
 -moz-animation: ticker 15s ease-in-out infinite;
 -moz-animation-delay: 1s;
-/*safari chrome
--webkit-animation: ticker 4s infinite;
--webkit-animation-delay: 1s;*/
+/*safari chrome*/
+-webkit-animation: ticker 15s ease-in-out infinite;
+-webkit-animation-delay: 1s;
 }
 
 #search{
@@ -280,12 +280,12 @@ position: relative;
 
 #logo{
 width: 20%;
-margin: 0 auto;
-padding: 0 2.5%;
-position: absolute;
-left: -50px;
-top: 230px;
--moz-animation: logomove 5s;
+margin: 01%;
+padding: 0;
+position:relative;
+top: 10px;
+-moz-animation: logomove 7s;
+float: left;
 }
 
 #logo a:hover{
@@ -293,20 +293,23 @@ background: none;
 }
 
 #girl1, #girl3{
+width: 19%;
 -moz-transform: rotate(5deg);
 }
 
 #girl2, #boy{
+width: 19%;
 -moz-transform: rotate(-5deg);
 }
 
 h2{
-margin: 0;
+margin: 5%;
 font-size: 2.5em;
 text-align: center;
 color: #4085b5; /*rgba(32,79,149,1);*/
 padding: 1% 9.765625%;/* 10px 100px */
 text-shadow: -1px -1px 2px #eee;
+display: block;
 }
 
 p{
@@ -317,8 +320,9 @@ color: #333;
 }
 
 #secondary{
+height: 100%
 clear: left;
-/*overflow: hidden;*/
+
 padding: 1% 0;
 }
 
@@ -348,7 +352,7 @@ text-align: center;
  
 #history{
 width: 33.333333%;
-height: 390px;
+height: 400px;
 float: left;
 /*padding:.15% 0;*/
 text-align: center;
@@ -444,9 +448,16 @@ background: #028894;
 clear: right;
 overflow: hidden;
 background: url(../images/blackboard.jpg);
+background-size: 100% 100%;
 height: 320px;
 font-family: 'Architects Daughter', cursive;
 margin: 5% 0;
+}
+
+#newsletter p{
+color: #fff;
+font-size: 1em;
+text-align: center;
 }
 
 h4{
@@ -465,7 +476,7 @@ margin: 0 5%;
 #newsletter{
 width: 40%;
 /*background: #000;*/
-margin: 2% auto;
+margin: .5% auto;
 float: right;
 font-size: 1.5em;
 }
@@ -965,7 +976,7 @@ background: -webkit-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%
 /*safari chrome*/
 @-webkit-keyframes ticker
 {
-0% {opacity: 1; left: 1000px;}
+0% {opacity: 1; left: -700px;}
 80% {opacity: 1; left: 0px;}
 100% {opacity: 0; left: 0px;}
 }
@@ -973,19 +984,378 @@ background: -webkit-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%
 /*firefox*/
 @-moz-keyframes logomove
 {
-0% {opacity: 0; top: 500px;}
-100% {opacity: 1; top: 230px;}
+0% {opacity: 0;}
+100% {opacity: 1;}
 }
 
 /*safari chrome*/
 @-webkit-keyframes logomove
 {
-0% {opacity: 0; top: 500px;}
-100% {opacity: 1; top: 30px;}
+0% {opacity: 0;}
+100% {opacity: 1;}
 }
 
-@font-face
-{
-font-family: myFirstFont;
-src: url("Chalkduster.ttf");
+/* ========================================================================= */
+/* Media Queries 
+Tablet Portrait size to standard 1200 (devices and browsers) */
+
+@media screen and (min-width: 959px) and (max-width:1200px){
+	/**/body{
+	background: #aaa;
+	}		
+	
+@-moz-keyframes ticker
+	{
+	0% {opacity: 1; right: -350px;}
+	80% {opacity: 1; right: 0px;}
+	100% {opacity: 0; right: 0px;}
+	}
+	
+}
+
+/* Media Queries 
+Tablet Portrait size to standard 960 (devices and browsers) */
+
+@media screen and (min-width: 768px) and (max-width:959px){
+	/**/body{
+	background: #000;
+	}		
+	
+	
+	
+		h5{
+font: 1.5em Corbel;
+line-height: 40px;
+	}
+	
+	#girl1,#girl2,#girl3,#boy{
+	display: none;
+	}
+	
+	#homelogo{
+	float:left;
+	}
+	
+	#history{
+	clear: both;
+	width: 95%;
+	margin: 0 3%;
+	padding:0;
+	height: 100%;
+	}
+	
+	
+	#facts{
+	width: 40%;
+	margin: 0 3%;
+	padding:0;
+	height: 100%;
+	}
+	
+	#directions{
+	width: 40%;
+	margin: 0 3%;
+	padding:0;
+	height: 100%;
+	}
+	
+	#newsletter{
+	width: 45%;
+	}
+	
+	#logo{
+	width: 25%;
+	float:left;
+	padding: 0;
+	}
+	
+	#logo img{
+	width: 100%;
+	}
+	
+	
+	@-moz-keyframes ticker
+	{
+	0% {opacity: 1; right: -350px;}
+	80% {opacity: 1; right: 0px;}
+	100% {opacity: 0; right: 0px;}
+	}
+}
+
+/* Media Queries 
+Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
+
+@media only screen and (min-width: 480px) and (max-width:767px){
+	/**/body{
+	background: #444;
+	}
+	
+	#contactcontent section p{
+	clear: left;
+	}	
+	
+	header{
+	background: #cee9fc;
+	background: -moz-radial-gradient(50% 5%, farthest-corner, #fff, #cee9fc);
+	background: -webkit-radial-gradient(50% 85%, farthest-corner, #fff, #cee9fc);
+	background: -mms-radial-gradient(50% 85%, farthest-corner, #fff, #cee9fc);
+	background: -o-radial-gradient(50% 85%, farthest-corner, #fff, #cee9fc);
+	height: 100%;
+	}
+	
+	h1{
+	font-size: 3em;
+	line-height: 70px;
+	}
+	
+	h5{
+	font: 1.25em Corbel;
+	line-height: 40px;
+	}
+	
+	nav a{
+	font-size: 1em;
+	}
+	
+	#girl1,#girl2,#girl3,#boy{
+	display: none;
+	}
+	
+	#homelogo{
+	width: 25%;
+	float:left;
+	padding: 0;
+	}
+	
+	#manatee{
+	width: 100%;
+	}
+	
+	h2{
+	font-size: 2.5em;
+	margin: 5% 0;
+	padding: 10% 0;
+	}
+	
+	p{
+	margin: 3%;
+	font-size: 1.5em;
+	}
+	
+	#history{
+	clear: both;
+	width: 95%;
+	margin: 3%;
+	height: 100%;
+	}
+	
+	#facts{
+	width: 42%;
+	margin: 3%;
+	height: 100%;
+	}
+	
+	#directions{
+	width: 42%;
+	margin: 3%;
+	height: 100%;
+	}
+
+	#newsletter{
+	display: none;
+	}
+	admin{
+	width: 100%;
+	}
+	
+	footer ul{
+	width: 95%;
+	}
+	
+	footer li{
+	width: 25%;
+	}
+	
+	footer a{
+	font-size:1em;
+	}
+	
+	#classroom a{
+	margin: 5% 0;
+	border: none;
+	}
+	
+	#parentcontent div{
+	clear: both;
+	width: 95%;
+	margin: 1%;
+	}
+	
+	#logo{
+	width: 25%;
+	float:left;
+	padding: 0;
+	}
+	
+	#logo img{
+	width: 100%;
+	}
+	
+	@-moz-keyframes ticker
+	{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+	
+}
+
+/* Media Queries 
+Mobile Portrait Size to Mobile Landscape Size 497 (devices and browsers) */
+
+@media only screen and (max-width:479px){
+	/**/body{
+	background: #aaa;
+	}
+	
+	#ticker{
+	height: 80px;
+	}
+	
+	header{
+	background: #cee9fc;
+	background: -moz-radial-gradient(50% 5%, farthest-corner, #fff, #cee9fc);
+	background: -webkit-radial-gradient(50% 85%, farthest-corner, #fff, #cee9fc);
+	background: -mms-radial-gradient(50% 85%, farthest-corner, #fff, #cee9fc);
+	background: -o-radial-gradient(50% 85%, farthest-corner, #fff, #cee9fc);
+	height: 100%;
+	}
+	
+	h1{
+	font-size: 3em;
+	line-height: 70px;
+	}
+	
+	h5{
+	font: 1em Corbel;
+	line-height: 40px;
+	float: none;
+	margin:0 auto;
+	}
+	
+	#search{
+	width: 60%;
+	float: none;
+	margin:0 auto;
+	padding:0;
+	}
+	
+	nav{
+	height: 100%;
+	}
+	
+	nav li{
+	width: 33.333333%;
+	}
+	
+	nav a{
+	font-size: 1.2em;
+	}
+	
+	#girl1,#girl2,#girl3,#boy{
+	display: none;
+	}
+	
+	#homelogo{
+	display: none;
+	}
+	
+	h2{
+	font-size: 2em;
+	}
+	
+	p{
+	margin: 3%;
+	font-size: 1.2em;
+	}
+	
+	h3{
+	font-size: 1.6em;
+	}
+	
+	#facts{
+	clear: both;
+	width: 95%;
+	margin: 3%;
+	}
+	
+	#history{
+	clear: both;
+	width: 95%;
+	margin: 3%;
+	}
+	
+	#directions{
+	width: 95%;
+	margin: 3%;
+	}
+	
+	#newsletter{
+	display: none;
+	}
+	
+	admin{
+	width: 100%;
+	}
+	
+	footer ul{
+	width: 95%;
+	}
+	
+	footer li{
+	width: 25%;
+	}
+	
+	footer a{
+	font-size:1em;
+	}
+	
+	/*Parent Page -----------------------*/
+	
+	#logo{
+	display: none;
+	}
+	
+	#parent{
+	height: 100%;
+	margin: 5% 0;
+	overflow: visible;
+	}
+	
+	#classroom{
+	width: 90%;
+	height: 100%;
+	}
+	
+	#classroom li{
+	width: 45%;
+	margin: 4% 2%;
+	}
+	
+	#classroom a{
+	margin: 5% 0;
+	border: none;
+	}
+
+	#parentcontent div{
+	clear: both;
+	width: 95%;
+	margin: 1%;
+	}
+	
+	@-moz-keyframes ticker
+	{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+	}
+	
 }
