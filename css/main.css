@@ -289,7 +289,7 @@ float: left;
 }
 
 #logo a{
-background: #000;
+
 }
 
 #logo a:hover{
@@ -1013,8 +1013,7 @@ Tablet Portrait size to standard 1200 (devices and browsers) */
 	0% {opacity: 1; right: -350px;}
 	80% {opacity: 1; right: 0px;}
 	100% {opacity: 0; right: 0px;}
-	}
-	
+	}	
 }
 
 /* Media Queries 
@@ -1025,11 +1024,9 @@ Tablet Portrait size to standard 960 (devices and browsers) */
 	background: #000;
 	}		
 	
-	
-	
-		h5{
-font: 1.5em Corbel;
-line-height: 40px;
+	h5{
+	font: 1.5em Corbel;
+	line-height: 40px;
 	}
 	
 	#girl1,#girl2,#girl3,#boy{
@@ -1077,6 +1074,9 @@ line-height: 40px;
 	width: 100%;
 	}
 	
+	#contact {
+	width:70%;
+	}
 	
 	@-moz-keyframes ticker
 	{
@@ -1203,6 +1203,70 @@ Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
 	
 	#logo img{
 	width: 100%;
+	}
+	
+	#contact {
+	width:95%;
+	}
+	
+	#contact label{
+	font-size: 1em;
+	}
+	
+	#full_name{
+	width: 340px;
+	height:20px;
+	margin: 0 0 0 55px;
+	}
+
+	#email{
+	width: 340px;
+	height:20px;
+	margin: 0 0 0 58px;
+	}
+
+	#address{
+	width: 340px;
+	height:20px;
+	margin: 0 0 0 42px;
+	}
+
+	#city{
+	width: 340px;
+	margin: 0 0 0 69px;
+	float: none;
+	}
+
+	#statel{
+	margin: 0;
+	}
+
+	#state{
+	width: 50px;
+	height:28px;
+	margin: 0 0 0 60px;
+	float: left;
+	}
+
+	#zipl{
+	margin: 0 0 0 10px;
+	}
+
+	#zip{
+	width: 58px;
+	height:20px;
+	margin: 0 0 0 10px;
+	}
+
+	#phone{
+	width: 340px;
+	height:20px;
+	margin: 0 0 0 53px;
+	}
+
+	#comments{
+	width: 340px;
+	margin: 0 0 10px 22px;
 	}
 	
 	@-moz-keyframes ticker
@@ -1356,6 +1420,78 @@ Mobile Portrait Size to Mobile Landscape Size 497 (devices and browsers) */
 	margin: 1%;
 	}
 	
+		#contact {
+	width:70%;
+	position: relative;
+	left: -25px;
+	}
+	
+	#contact label{
+	font-size: 1em;
+	float: none;
+	}
+	
+	#full_name{
+	clear:both;
+	width: 300px;
+	height:20px;
+	margin: 0;
+	}
+
+	#email{
+	width: 300px;
+	height:20px;
+	margin: 0;
+	}
+
+	#address{
+	width: 300px;
+	height:20px;
+	margin: 0;
+	}
+
+	#city{
+	width: 300px;
+	height:20px;
+	margin: 0;
+	float: none;
+	}
+
+	#statel{
+	margin: 0;
+	}
+
+	#state{
+	width: 50px;
+	height:28px;
+	margin: 0;
+	float: none;
+	}
+
+	#zipl{
+	margin: 0;
+	}
+
+	#zip{
+	width: 58px;
+	height:20px;
+	margin: 0 0 0 14px;	
+	}
+
+	#phone{
+	width: 300px;
+	height:20px;
+	margin: 0;	
+	}
+
+	#comments{
+	width: 300px;
+	margin: 0;
+	}
+	
+	button{
+	width: 35%;
+	}
 	@-moz-keyframes ticker
 	{
 	0% {opacity: 1;}
