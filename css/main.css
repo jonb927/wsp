@@ -288,6 +288,10 @@ top: 10px;
 float: left;
 }
 
+#logo a{
+background: #000;
+}
+
 #logo a:hover{
 background: none;
 }
