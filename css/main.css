@@ -976,9 +976,9 @@ background: -webkit-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%
 /*safari chrome*/
 @-webkit-keyframes ticker
 {
-0% {opacity: 1; left: -700px;}
-80% {opacity: 1; left: 0px;}
-100% {opacity: 0; left: 0px;}
+0% {opacity: 1; right: -700px;}
+80% {opacity: 1; right: 0px;}
+100% {opacity: 0; right: 0px;}
 }
 
 /*firefox*/
