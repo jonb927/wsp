@@ -108,7 +108,7 @@ overflow: hidden;
 }
 
 h1{
-font: 4.5em normal Baskerville;
+/*font: 4.5em normal Baskerville;
 margin:0 auto;
 line-height: 138px;
 text-align: center;
@@ -121,7 +121,7 @@ text-shadow: 0px 0px 1px #fff,
  0px -1px 1px #fff,
  1px 0px 1px #fff,
  -1px 0px 1px #fff,
- 3px 1px 2px #000;
+ 3px 1px 2px #000;*/
 }
 
 h5{
@@ -268,6 +268,15 @@ margin: 0 auto;
 
 #generic{
 height: 600px;
+}
+
+.sles{
+margin: 1.8% auto;
+width: 59.133333%;
+height: 65%;/*95px;*/
+background: url(../images/sle.png) no-repeat;
+background-size: 100% 100%;
+text-indent: -9999px;
 }
 
 #main{
@@ -984,6 +993,7 @@ float: left;
 width: 90%;
 margin: 5% auto;
 background: #c15a5b;
+text-shadow: -1px -1px 1px #333;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
 }
@@ -1030,6 +1040,7 @@ margin: 5% auto;
 }
 
 #staffcontent h2{
+clear: both;
 margin: 5% auto 2%;
 padding:0;
 width: 90%;
@@ -1046,6 +1057,7 @@ margin: 2% auto;
 margin: 0 auto;
 background: #d8ab72;
 color: #fff;
+padding: 1% 0;
 text-shadow: -1px -1px 1px #333;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
@@ -1334,7 +1346,9 @@ Tablet Portrait size to standard 1200 (devices and browsers) */
 	/*body{
 	background: #aaa;
 	}	*/	
-	
+	.sles{
+width: 70%;
+}
 @-moz-keyframes ticker
 	{
 	0% {opacity: 1; right: -350px;}
@@ -1355,6 +1369,10 @@ Tablet Portrait size to standard 960 (devices and browsers) */
 	font: 1.5em Corbel;
 	line-height: 40px;
 	}
+	
+	.sles{
+width: 75%;
+}
 	
 	#girl1,#girl2,#girl3,#boy{
 	display: none;
@@ -1390,13 +1408,7 @@ Tablet Portrait size to standard 960 (devices and browsers) */
 	#newsletter{
 	width: 45%;
 	}
-	
-	#logo{
-	width: 25%;
-	float:left;
-	padding: 0;
-	}
-	
+
 	#logo img{
 	width: 100%;
 	}
@@ -1404,7 +1416,71 @@ Tablet Portrait size to standard 960 (devices and browsers) */
 	#contact {
 	width:70%;
 	}
+	/*====================
+	staff
+	====================*/
 	
+	#admins {
+width: 90%;
+margin: 1% auto;
+padding: 0;
+float: none;
+}
+
+#admins h3{
+width: 90%;
+}
+
+#admins p{
+font: 1.7em Corbel;
+color: #333;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+padding: 1%;
+}
+
+#principal{
+width: 48%;
+float: left;
+}
+
+#aprincipal{
+width: 45%;
+float: left;
+position: relative;
+top: -32px;
+}
+
+#directory{
+display: none;
+}
+
+#admins img{
+width: 80%;
+margin: 0 auto;
+padding: 5% 10% 2%;
+}
+
+#llogo{
+display: none;
+}
+
+#staffcontent{
+float: none;
+width: 90%;
+margin: 5% auto;
+}
+
+#staff_spotlight a{
+font: 1.1em Corbel;
+}
+
+#staff_spotlight a{
+text-align: center;
+}
+
+
 	@-moz-keyframes ticker
 	{
 	0% {opacity: 1; right: -350px;}
@@ -1438,6 +1514,10 @@ Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
 	font-size: 3em;
 	line-height: 70px;
 	}
+	
+	.sles{
+width: 80%;
+}
 	
 	h5{
 	font: 1.25em Corbel;
@@ -1522,10 +1602,13 @@ Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
 	margin: 1%;
 	}
 	
-	#logo{
-	width: 25%;
-	float:left;
+	#parent h2{
+	margin: 5% 0;
 	padding: 0;
+	}
+	
+	#logo{
+	display: none;
 	}
 	
 	#logo img{
@@ -1595,6 +1678,72 @@ Mobile Landscape Size to Tablet Portrait 767 (devices and browsers) */
 	width: 340px;
 	margin: 0 0 10px 22px;
 	}
+	/*===========================
+	Staff
+	===========================*/
+	#admins {
+width: 90%;
+margin: 1% auto;
+padding: 0;
+float: none;
+}
+
+#admins h3{
+width: 90%;
+}
+
+#admins p{
+font: 1.3em Corbel;
+color: #333;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+padding: 1%;
+}
+
+#principal{
+width: 48%;
+float: left;
+}
+
+#aprincipal{
+width: 45%;
+float: left;
+position: relative;
+top: -32px;
+}
+
+#directory{
+display: none;
+}
+
+#admins img{
+width: 80%;
+margin: 0 auto;
+padding: 5% 10% 2%;
+}
+
+#llogo{
+display: none;
+}
+
+#staffcontent{
+float: none;
+width: 95%;
+margin: 5% auto;
+}
+
+#staffcontent p{
+font: 1.3em Corbel;
+}
+
+#staff_spotlight a{
+font: 1em Corbel;
+}
+	#staff_spotlight a{
+text-align: center;
+}
+	
 	
 	@-moz-keyframes ticker
 	{
@@ -1629,6 +1778,10 @@ Mobile Portrait Size to Mobile Landscape Size 497 (devices and browsers) */
 	font-size: 3em;
 	line-height: 70px;
 	}
+	
+	.sles{
+width: 90%;
+}
 	
 	h5{
 	font: 1em Corbel;
@@ -1819,6 +1972,92 @@ Mobile Portrait Size to Mobile Landscape Size 497 (devices and browsers) */
 	button{
 	width: 35%;
 	}
+	
+	/*====================
+	STAFF
+	=====================*/
+	#admins {
+width: 90%;
+margin: 1% auto;
+padding: 0;
+float: none;
+}
+
+#admins h3{
+width: 90%;
+}
+
+#admins p{
+font: 1em Corbel;
+color: #333;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+padding: 1%;
+}
+
+#principal{
+width: 48%;
+float: left;
+}
+
+#aprincipal{
+width: 45%;
+float: left;
+position: relative;
+top: -32px;
+}
+
+#directory{
+display: none;
+}
+
+#admins img{
+width: 80%;
+margin: 0 auto;
+padding: 5% 10% 2%;
+}
+
+#llogo{
+display: none;
+}
+
+#staffcontent{
+float: none;
+width: 95%;
+margin: 5% auto;
+}
+
+#staffcontent p{
+font: 1em Corbel;
+}
+
+#alison p, #meg p{
+display: none;
+}
+
+#alison img, #meg img{
+display: none;
+}
+
+#staff_spotlight h4{
+font: 1.2em Corbel;
+}
+
+#staff_spotlight ul{
+padding: 3% 0;
+}
+
+#staff_spotlight li{
+float: none;
+width: 95%;
+}
+
+#staff_spotlight a{
+font: .9em Corbel;
+}
+	
+	
 	
 	@-moz-keyframes ticker
 	{
