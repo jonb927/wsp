@@ -251,7 +251,7 @@ a:active{
  }
  
  .clearfix{
-clear: left;
+clear: both;
 }
 
 /*
@@ -279,7 +279,9 @@ position: relative;
 }
 
 #logo{
+clear: both;
 width: 20%;
+height: 200px;
 margin: 01%;
 padding: 0;
 position:relative;
@@ -298,12 +300,10 @@ background: none;
 
 #girl1, #girl3{
 width: 19%;
--moz-transform: rotate(5deg);
 }
 
 #girl2, #boy{
 width: 19%;
--moz-transform: rotate(-5deg);
 }
 
 h2{
@@ -969,6 +969,220 @@ background: -ms-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%,  r
 background: -o-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%,  rgba(186,131,72,1) 80%);
 background: -webkit-linear-gradient(rgba(186,131,72,1),  rgba(246,224,196,1) 30%,  rgba(186,131,72,1) 80%);
 }
+
+/* STAFF
+----------------------------------------------------*/
+#admins {
+width: 30%;
+margin: 1% auto;
+padding: 0;
+position:relative;
+top: 10px;
+-moz-animation: logomove 7s;
+float: left;
+}
+
+#admins h3{
+width: 90%;
+margin: 5% auto;
+background: #c15a5b;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+#admins p{
+font: 1.7em Corbel;
+color: #333;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+padding: 1%;
+}
+
+#admins img{
+width: 80%;
+margin: 0 auto;
+padding: 5% 10% 2%;
+}
+
+#llogo:hover{
+background: none;
+}
+
+#directory{
+padding: 10% 0;
+margin: 10% auto;
+width: 70%;
+height: 130px;
+background: #4085b5;
+color: #fff;
+box-shadow: 1px 1px 4px #333;
+text-shadow: 1px 1px 3px #333;
+font: 3em bold Baskerville;
+}
+
+#directory:hover{
+opacity: .8;
+}
+
+#staffcontent{
+float: right;
+width: 70%;
+margin: 5% auto;
+}
+
+#staffcontent h2{
+margin: 5% auto 2%;
+padding:0;
+width: 90%;
+text-align: center;
+}
+
+#staffcontent p{
+width: 90%;
+font: 1.6em Corbel;
+margin: 2% auto;
+}
+
+#staff_spotlight h2{
+margin: 0 auto;
+background: #d8ab72;
+color: #fff;
+text-shadow: -1px -1px 1px #333;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+#staff_spotlight img{
+height:190px;
+}
+
+#alison{
+margin:2% auto;
+width: 40%;
+float: left;
+}
+
+#alison img{
+margin: 0 auto;
+position: relative;
+left: 27.5%;
+}
+
+#meg{
+margin:2% auto;
+width: 40%;
+float: right;
+}
+
+#meg img{
+margin: 0 auto;
+position: relative;
+left: 28.5%;
+}
+
+#alison p{
+text-align: center;
+color: #488bb9;
+margin: 0;
+}
+
+#meg p{
+text-align: center;
+color: #488bb9;
+margin: 0;
+}
+
+#staff_spotlight h4{
+width: 90%;
+font: 2em Corbel;
+color: #488bb9;
+text-align: center;
+}
+
+#staff_spotlight ul{
+width:80%;
+margin: 10% auto;
+}
+
+#staff_spotlight li{
+width: 50%;
+list-style-type: none;
+float:left;
+}
+
+#staff_spotlight a{
+text-align: left;
+color: #488bb9;
+text-shadow: 1px 1px 1px #fff;
+}
+
+#staff_spotlight a:hover{
+color: #fff;
+}
+
+/*-------------------------------------------------
+Students
+-------------------------------------------------*/
+
+
+#kidlinks ul{
+clear: both;
+width:100%;
+margin: 0 auto;
+}
+
+.orange, .red, .blue, .yellow{
+float:left;
+list-style-type: none;
+}
+
+.orange, .blue{
+width: 33.333333%;
+
+}
+
+.yellow, .red{
+width: 25%;
+}
+
+.orange a{
+background: #daa65d;
+margin:2%;
+box-shadow: 1px 1px 3px #333;
+line-height: 100px;
+display: block;
+height: 100px;
+}
+
+.red a{
+background: #da5f59;
+margin: 3% 2%;
+box-shadow: 1px 1px 3px #333;
+line-height: 100px;
+display: block;
+height: 100px;
+}
+
+.yellow a{
+background: #cac337;
+margin: 3% 2%;
+box-shadow: 1px 1px 3px #333;
+line-height: 100px;
+display: block;
+height: 100px;
+}
+
+.blue a{
+background: #3c718d;
+margin: 2%;
+line-height: 100px;
+display: block;
+height: 100px;
+}
+
+
+
 /*firefox*/
 @-moz-keyframes ticker
 {
