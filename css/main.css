@@ -281,11 +281,11 @@ position: relative;
 #logo{
 clear: both;
 width: 20%;
-height: 200px;
-margin: 01%;
+height: 150px;
+margin: 1%;
 padding: 0;
 position:relative;
-top: 10px;
+
 float: left;
 }
 
@@ -352,7 +352,6 @@ float: left;
 text-align: center;
 }
 
- 
 #history{
 width: 33.333333%;
 height: 400px;
@@ -370,7 +369,6 @@ color: #fff;
 text-shadow: -1px -1px 1px #333;
 }
 
-
 #history p{
 text-align: left;
 font: 1em Corbel;
@@ -379,8 +377,6 @@ padding: 2%;
 color: #000;
 text-shadow: 0 0 1px #eee;
 }
-
-
 
 table{
 margin: 4%;
@@ -1116,13 +1112,21 @@ text-shadow: 1px 1px 1px #fff;
 }
 
 #staff_spotlight a:hover{
+text-align: left;
 color: #fff;
+text-shadow: 1px 1px 1px #333;
+background: none;
 }
+
+
 
 /*-------------------------------------------------
 Students
 -------------------------------------------------*/
-
+#kids_zone h2{
+position: relative;
+top: 40px;
+}
 
 #kidlinks ul{
 clear: both;
@@ -1179,7 +1183,127 @@ display: block;
 height: 100px;
 }
 
+/*---------------------------------------------
+News
+---------------------------------------------*/
+#manateenews h2{
+position: relative;
+top: 50px;
+}
 
+#events h3{
+padding: .5% 0;
+width: 100%;
+background: #c15a5b;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+color: #fff;
+text-shadow: -1px -1px 1px #333;
+}
+
+#events table{
+font: 1.5em Corbel;
+width: 95%;
+margin: 0 auto;
+}
+
+#events td{
+font: 1em Corbel;
+width: 10%;
+padding: .5% 2.5%;
+}
+
+#policies, #registration, #news{
+width: 33.333333%;
+margin: 5% 0;
+padding: 0;
+float: left;
+}
+
+#policies h3{
+width: 95%;
+background: #568ebf;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+color: #fff;
+text-shadow: -1px -1px 1px #333;
+}
+
+#policies p{
+margin: 5% auto;
+width: 85%;
+font: 1.3em Corbel;
+}
+
+#policies li{
+margin: 5% 0;
+width: 90%;
+float: none;
+list-style-type: none;
+}
+
+#policies a{
+text-align: left;
+font: 1.3em Corbel;
+color: #568ebf;
+text-shadow: 1px 1px 1px #fff;
+}
+
+#policies a:hover{
+color: #fff;
+text-shadow: 1px 1px 1px #333;
+}
+
+#registration h3{
+width: 95%;
+background: #c15a5b;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+color: #fff;
+text-shadow: -1px -1px 1px #333;
+}
+
+#registration p{
+margin: 5% auto;
+width: 85%;
+font: 1.4em Corbel;
+}
+
+.more{
+display: inline;
+font: 1em Corbel;
+color: #568ebf;
+text-shadow: 1px 1px 1px #fff;
+}
+
+#news h3{
+width: 95%;
+background: #d8ab72;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+text-shadow: -1px -1px 1px #333;
+}
+
+#news li{
+margin: 5% 0;
+width: 90%;
+float: none;
+list-style-type: none;
+}
+
+#news a{
+margin: 5% 0
+text-align: left;
+font: 1.2em Corbel;
+color: #568ebf;
+text-shadow: 1px 1px 1px #fff;
+}
+
+#news p{
+margin: 5% auto;
+width: 90%;
+font: 1.1em Corbel;
+}
 
 /*firefox*/
 @-moz-keyframes ticker
