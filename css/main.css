@@ -1198,19 +1198,6 @@ height: 100px;
 100% {opacity: 0; right: 0px;}
 }
 
-/*firefox*/
-@-moz-keyframes logomove
-{
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
-
-/*safari chrome*/
-@-webkit-keyframes logomove
-{
-0% {opacity: 0;}
-100% {opacity: 1;}
-}
 
 /* ========================================================================= */
 /* Media Queries 
