@@ -1213,14 +1213,14 @@ width: 10%;
 padding: .5% 2.5%;
 }
 
-#policies, #registration, #news{
+#npolicies, #registration, #newsletters{
 width: 33.333333%;
 margin: 5% 0;
 padding: 0;
 float: left;
 }
 
-#policies h3{
+#npolicies h3{
 width: 95%;
 background: #568ebf;
 border-top-left-radius: 10px;
@@ -1229,27 +1229,27 @@ color: #fff;
 text-shadow: -1px -1px 1px #333;
 }
 
-#policies p{
+#npolicies p{
 margin: 5% auto;
 width: 85%;
 font: 1.3em Corbel;
 }
 
-#policies li{
+#npolicies li{
 margin: 5% 0;
 width: 90%;
 float: none;
 list-style-type: none;
 }
 
-#policies a{
+#npolicies a{
 text-align: left;
 font: 1.3em Corbel;
 color: #568ebf;
 text-shadow: 1px 1px 1px #fff;
 }
 
-#policies a:hover{
+#npolicies a:hover{
 color: #fff;
 text-shadow: 1px 1px 1px #333;
 }
@@ -1276,7 +1276,7 @@ color: #568ebf;
 text-shadow: 1px 1px 1px #fff;
 }
 
-#news h3{
+#newsletters h3{
 width: 95%;
 background: #d8ab72;
 border-top-left-radius: 10px;
@@ -1284,14 +1284,14 @@ border-top-right-radius: 10px;
 text-shadow: -1px -1px 1px #333;
 }
 
-#news li{
+#newsletters li{
 margin: 5% 0;
 width: 90%;
 float: none;
 list-style-type: none;
 }
 
-#news a{
+#newsletters a{
 margin: 5% 0
 text-align: left;
 font: 1.2em Corbel;
@@ -1299,7 +1299,7 @@ color: #568ebf;
 text-shadow: 1px 1px 1px #fff;
 }
 
-#news p{
+#newsletters p{
 margin: 5% auto;
 width: 90%;
 font: 1.1em Corbel;
