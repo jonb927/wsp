@@ -327,7 +327,7 @@ color: #333;
 }
 
 #secondary{
-height: 100%
+height: 100%;
 clear: left;
 
 padding: 1% 0;
@@ -764,7 +764,7 @@ color:#fff;
 }
 
 button:hover{
-background: rgba(8,12,119,1)
+background: rgba(8,12,119,1);
 background:-moz-linear-gradient(rgba(8,12,119,1), rgba(52,106,163,1) 30% ,  rgba(8,12,119,1));
 background:-ms-linear-gradient(rgba(8,12,119,1), rgba(52,106,163,1) 30% ,  rgba(8,12,119,1));
 background:-o-linear-gradient(rgba(8,12,119,1), rgba(52,106,163,1) 30% ,  rgba(8,12,119,1));
@@ -853,7 +853,7 @@ background: url(../images/art.jpg);
 
 #parentcontent div{
 width: 30%;
-margin: 0 autos;
+margin: 0 auto;
 padding: 1.625%;
 float:left;
 overflow: hidden;
@@ -1296,7 +1296,7 @@ list-style-type: none;
 }
 
 #newsletters a{
-margin: 5% 0
+margin: 5% 0;
 text-align: left;
 font: 1.2em Corbel;
 color: #568ebf;
