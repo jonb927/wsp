@@ -250,6 +250,10 @@ a:active{
  background: rgba(0, 0, 0, 0.3);
  }
  
+.current{
+background: #d8ab72;
+}
+ 
  .clearfix{
 clear: both;
 }
