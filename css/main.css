@@ -177,7 +177,7 @@ background: rgba(0, 0, 0, .6);
 * html #search input[type=submit]{ 
   background: none; 
   filter: progid:DXImageTransform.Microsoft. 
-AlphaImageLoader(src="images/submit.png", sizingMethod="image");
+AlphaImageLoader(src="../images/submit.png", sizingMethod="image");
 }
 
 #search input[type=submit]{
