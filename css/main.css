@@ -147,6 +147,13 @@ padding: .333333%; /*5px */
 font: 1.25em Corbel;
 }
 
+* html #search input{ 
+  background: none; 
+  filter: progid:DXImageTransform.Microsoft. 
+AlphaImageLoader(src="search.png", sizingMethod="image");
+}
+
+
 #search input{
 padding: 0;
 margin: 0;
@@ -163,6 +170,12 @@ box-shadow: inset 1px 1px 1px #333;
 
 #search input:focus{
 background: rgba(0, 0, 0, .6);
+}
+
+* html #search input[type=submit]{ 
+  background: none; 
+  filter: progid:DXImageTransform.Microsoft. 
+AlphaImageLoader(src="submit.png", sizingMethod="image");
 }
 
 #search input[type=submit]{
