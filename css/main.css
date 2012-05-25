@@ -507,7 +507,7 @@ margin:1% 0;
 }
 
 #newsletter #namenews{
-background: rgba(0,0,0,0.1);
+background: #000;
 border: 2px solid #fff;
 width: 54%;
 height: 45px;
@@ -517,7 +517,7 @@ color: #effa3f;
 }
 
 #newsletter #emailnews{
-background: rgba(0,0,0,0.1);
+background: #000;
 border: 2px solid #fff;
 position : relative;
 left: 9px;
@@ -536,7 +536,7 @@ font-family: 'Architects Daughter', Corbel;
 
 #newsletter input[type=checkbox]{
 border: 2px solid #fff;
-background: rgba(0,0,0,0.1);
+background: #000;
 }
 
 #terms input{
