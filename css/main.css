@@ -148,12 +148,16 @@ font: 1.25em Corbel;
 }
 
 #search input{
+padding: 0;
+margin: 0;
+-webkit-appearance: none;
 color: #aaa;
 height: 25px;
+/**/
 border-top-left-radius: 20px;
 border-bottom-left-radius: 20px;
 border: none;
-background: rgba(0, 0, 0, .3);
+background:/* url(../images/search.png);*/ rgba(0, 0, 0, .3);
 box-shadow: inset 1px 1px 1px #333;
 }
 
@@ -162,16 +166,21 @@ background: rgba(0, 0, 0, .6);
 }
 
 #search input[type=submit]{
+width: 30px;
+margin: 0;
+padding: 0;
+border: 0px;
 color: #000;
-height: 27px;
+height: 24px;
+/**/
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
 border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
-background: url(../images/mglass.png) center no-repeat, rgba(255, 255, 255, .8);
+background: /*url(../images/submit.gif);*/ url(../images/mglass.png) center no-repeat, rgba(255, 255, 255, .8);
 position: relative;
 right: 4px;
-top: 1px;
+
 }
 
 #search input[type=submit]:hover{
