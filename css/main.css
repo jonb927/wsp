@@ -1182,6 +1182,10 @@ display: block;
 height: 100px;
 }
 
+.orange a:hover{
+background: #3c718d;
+}
+
 .red a{
 background: #da5f59;
 margin: 3% 2%;
@@ -1189,6 +1193,10 @@ box-shadow: 1px 1px 3px #333;
 line-height: 100px;
 display: block;
 height: 100px;
+}
+
+.red a:hover{
+background: #daa65d;
 }
 
 .yellow a{
@@ -1200,12 +1208,20 @@ display: block;
 height: 100px;
 }
 
+.yellow a:hover{
+background: #da5f59;
+}
+
 .blue a{
 background: #3c718d;
 margin: 2%;
 line-height: 100px;
 display: block;
 height: 100px;
+}
+
+.blue a:hover{
+background: #cac337;
 }
 
 /*---------------------------------------------
